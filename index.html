@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component Library & Design System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Design System Component Library</h1>
+    <p>Modular, reusable UI components built with design tokens and variants.</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Section 1: Buttons -->
+    <section class="component-group">
+      <h2>1. Button Component Variants</h2>
+      <div class="component-demo">
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+        <button class="btn btn-outline">Outline Button</button>
+        <button class="btn btn-danger">Danger Button</button>
+        <button class="btn btn-primary btn-small">Small Button</button>
+      </div>
+    </section>
+
+    <!-- Section 2: Icons -->
+    <section class="component-group">
+      <h2>2. Icon Component Variants</h2>
+      <div class="component-demo">
+        <span class="icon icon-user" aria-label="User Icon">👤</span>
+        <span class="icon icon-search" aria-label="Search Icon">🔍</span>
+        <span class="icon icon-settings" aria-label="Settings Icon">⚙️</span>
+        <span class="icon icon-check" aria-label="Check Icon">✅</span>
+      </div>
+    </section>
+
+    <!-- Section 3: Picture Components -->
+    <section class="component-group">
+      <h2>3. Picture Components (With & Without Text)</h2>
+      <div class="component-demo grid">
+        <!-- Picture Without Text -->
+        <div class="picture-card">
+          <img src="https://via.placeholder.com/300x180" alt="Placeholder image" class="picture-img">
+        </div>
+
+        <!-- Picture With Text -->
+        <div class="picture-card">
+          <img src="https://via.placeholder.com/300x180" alt="Placeholder image" class="picture-img">
+          <div class="picture-body">
+            <h3>Card Title</h3>
+            <p>This is a picture component variant that includes descriptive text underneath.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Badge Component (Custom Choice 1) -->
+    <section class="component-group">
+      <h2>4. Badge Component (Custom Choice 1)</h2>
+      <div class="component-demo">
+        <span class="badge badge-success">Active</span>
+        <span class="badge badge-warning">Pending</span>
+        <span class="badge badge-error">Failed</span>
+      </div>
+    </section>
+
+    <!-- Section 5: Alert Component (Custom Choice 2) -->
+    <section class="component-group">
+      <h2>5. Alert Component (Custom Choice 2)</h2>
+      <div class="component-demo vertical">
+        <div class="alert alert-info">
+          <strong>Info:</strong> This is an informational message.
+        </div>
+        <div class="alert alert-success">
+          <strong>Success:</strong> Action completed successfully.
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* Design Tokens (CSS Variables) */
+:root {
+  --primary-color: #0052cc;
+  --secondary-color: #42526e;
+  --danger-color: #de350b;
+  --success-color: #00875a;
+  --warning-color: #ffab00;
+  --bg-color: #f4f5f7;
+  --surface-color: #ffffff;
+  --text-color: #172b4d;
+  --border-radius: 6px;
+  --font-family: Arial, sans-serif;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: var(--surface-color);
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.component-group {
+  background-color: var(--surface-color);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.component-demo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.component-demo.vertical {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.component-demo.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* 1. Button Component */
+.btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary { background-color: var(--primary-color); color: white; }
+.btn-secondary { background-color: var(--secondary-color); color: white; }
+.btn-outline { background-color: transparent; border: 2px solid var(--primary-color); color: var(--primary-color); }
+.btn-danger { background-color: var(--danger-color); color: white; }
+.btn-small { padding: 0.3rem 0.7rem; font-size: 0.85rem; }
+
+/* 2. Icon Component */
+.icon {
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+/* 3. Picture Component */
+.picture-card {
+  border: 1px solid #dfe1e6;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background-color: var(--surface-color);
+}
+
+.picture-img {
+  width: 100%;
+  display: block;
+}
+
+.picture-body {
+  padding: 1rem;
+}
+
+.picture-body h3 {
+  margin-top: 0;
+}
+
+/* 4. Badge Component */
+.badge {
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 12px;
+  color: white;
+}
+
+.badge-success { background-color: var(--success-color); }
+.badge-warning { background-color: var(--warning-color); color: #333; }
+.badge-error { background-color: var(--danger-color); }
+
+/* 5. Alert Component */
+.alert {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid;
+}
+
+.alert-info { background-color: #deebff; border-color: var(--primary-color); }
+.alert-success { background-color: #e3fcef; border-color: var(--success-color); }
